@@ -89,13 +89,13 @@ function indicate(e) {
 }
 
 function listener() {
-   let indicators = document.querySelector('div.indicators');
+   let indicators = document.querySelector('.indicators');
     indicators.addEventListener('click', indicate);
 }
 
 function createCarousel(slidesCount = 5) {
     carousel = document.querySelector('#carousel');
-    createContainer();
+    // createContainer();
     createSlides(slidesCount);
     createIndicators(slidesCount);
     createControls();
